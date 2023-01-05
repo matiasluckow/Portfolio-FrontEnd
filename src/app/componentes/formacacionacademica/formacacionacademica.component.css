@@ -1,0 +1,40 @@
+.logoutn{
+    width: 55%;
+}
+.logonssc{
+    width: 25%;
+}
+
+.borde2{
+    border: 2px solid blue;
+    border-radius: 50px; 
+    margin-top: 20px;
+    margin-bottom: 30px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.subir{
+    margin-left: 10px;
+}
+
+.editar{
+    margin-left: 130px; 
+}
+
+.borrar{
+    margin-left: 10px;
+}
+
+.editar2{
+    margin-left: 30px;
+}
+
+.borrar2{
+    margin-left: 10px;
+}

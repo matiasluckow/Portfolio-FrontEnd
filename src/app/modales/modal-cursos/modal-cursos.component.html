@@ -1,0 +1,44 @@
+<div class="modal" id="CursosModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Editar Cursos y Certificaciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form name="experienciaForm">
+
+            <!-- Formulurario de Formacion-Academica -->
+            <div class="mb-3">
+                <select class="form-select" id="cursosId">
+                    <option selected>Seleccionar Institucion</option>
+                    <option value="1">ID1</option>
+                    <option value="2">ID2</option>
+                    <option value="2">ID3</option>
+                    <option value="2">ID4</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="cursosNombre" class="form-label">Modificar Nombre del Curso</label>
+                <input  type="text" class="form-control" id="cursosNombre" placeholder="Nombre nuevo">
+            </div>
+            <div class="mb-3">
+                <label for="cursosPeriodoInicio" class="form-label">Modificar Periodo Inicio</label>
+                <input  type="date" class="form-control" id="cursosPeriodoInicio">
+            </div>
+            <div class="mb-3">
+                <label for="cursosPeriodoFin" class="form-label">Modificar Periodo Fin</label>
+                <input type="date" class="form-control" id="cursosPeriodoFin">
+            </div>
+            <div class="mb-3">
+                <label for="cursosNivel" class="form-label">Modificar Nivel del Curso</label>
+                <input  type="text" class="form-control" id="cursosNivel" placeholder="Nivel nuevo">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-Login" data-bs-dismiss="modal">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>

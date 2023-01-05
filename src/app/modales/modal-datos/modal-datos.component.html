@@ -1,0 +1,38 @@
+<div class="modal" id="Datos-Modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Editar Datos Personales</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form name="datosForm">
+
+            <!-- Formulurario de Formacion-Academica -->
+            <div class="mb-3">
+                <select class="form-select" id="educacionId">
+                    <option selected>Seleccionar Persona</option>
+                    <option value="1">ID1</option>
+                    <option value="2">ID2</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="educacionNombre" class="form-label">Modificar Nombre</label>
+                <input  type="text" class="form-control" id="experienciaCargo" placeholder="Nombre nuevo">
+            </div>
+            <div class="mb-3">
+                <label for="educacionTitulo" class="form-label">Modificar Apellido</label>
+                <input  type="text" class="form-control" id="experienciaCargo" placeholder="Apellido nuevo">
+            </div>
+            <div class="mb-3">
+                <label for="educacionImg" class="form-label">Modificar Domicilio</label>
+                <input class="form-control" type="url" id="educacionImg" placeholder="Nueva ubicacion">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-Login" data-bs-dismiss="modal">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>

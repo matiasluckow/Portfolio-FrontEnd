@@ -1,0 +1,108 @@
+{
+
+        "nombre": "Matias Ian",
+        "apellido": "Luckow",
+        "ocupacion": "Estudiante en Ingenieria en Sistemas",
+        "imagen": "./assets/img/FotoCv.jpg",
+        "mail": "matiluckow@hotmail.com.ar",
+        "ubicacion": "Residente en Belgrano C.A.B.A",
+        "acerca": "Mi objetivo es desarrollarme profesionalmente y poder contribuir en una empresa aplicando mis conocimientos, y a su vez aprender nuevos. Aspiro poder capacitarme constantemente para un buen desempeño de las funciones asignadas",
+        "logoArgProg": "./assets/img/LogoArgentinaPrograma2.png",
+
+        "redes":[
+            {
+                "id": 1,
+                "url": "https://www.linkedin.com/in/matias-ian-luckow-318b72238/"
+            },
+            {
+                "id": 2,
+                "url": "https://www.instagram.com/matiluck/?hl=es-la"
+            },
+            {
+                "id": 3,
+                "url": "https://github.com/matiasluckow"
+            }
+        ],
+
+        "aptitudes":[
+            {
+                "Organizado": "Organizado",
+                "Disciplinado": "Disciplinado",
+                "Responsable": "Responsable",
+                "Autodidacta": "Autodidacta",
+                "Proactivo": "Proactivo"
+            }
+        ],
+
+
+        "educacion":[
+            {
+                "id": 1,
+                "institucion": "Universidad Teconologica Nacional",
+                "titulo": "Ingenieria en Sistemas de la Informacion",
+                "img": "./assets/img/LogoUTN.jpg",
+                "inicio": "2021",
+                "fin": "Actualidad"
+            },
+
+            {
+                "id": 2,
+                "institucion": "Instituto Nuestra Señora del Sagrado Corazon",
+                "titulo": "Graduado en Bachillerato de Economia y Administracion",
+                "img": "./assets/img/LogoNSSC.jpeg",
+                "inicio": "2015",
+                "fin": "2020"
+                
+            }
+
+        ],
+
+        "cursos":[
+            {
+                "id": 1,
+                "nombre": "Primera etapa del Plan Argentina Programa",
+                "inicio": "02/2022",
+                "fin": "04/2022",
+                "nivel": "Nivel: Se Programar"
+            },
+            {
+                "id": 2,
+                "nombre": "Segunda etapa del Plan Argentina Programa",
+                "inicio": "07/2022",
+                "fin": "Actualidad",            
+                "nivel": "Nivel: Yo Programo"
+            },
+            
+            {
+                "id": 3,
+                "nombre":"Centro Universitario de Idiomas",
+                "inicio": "",
+                "fin": "",
+                "nivel": "Ciclo Basico Nivel 1 (Ingles)"
+            },
+            {
+                "id": 4,
+                "nombre":"Centro Universitario de Idiomas",
+                "inicio": "",
+                "fin": "",
+                "nivel": "Ciclo Basico Nivel 2 (Ingles)"
+            }
+            
+        ],
+        
+        "experiencias":[
+           {
+                "id": 1,
+                "logoEmpresa": "",
+                "url": "",
+                "puesto": "Trabajo Independiente",
+                "inicio": "",
+                "fin": "Actualidad",
+                "descipcion": "",
+                "cargo1": "Mantenimiento de computadoras",
+                "cargo2": "Cambio de Windows",
+                "cargo3": "Actualizacion de Drivers",
+                "cargo4": "Instalacion de Programas"
+           }
+        ]
+}

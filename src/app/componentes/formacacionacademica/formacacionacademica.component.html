@@ -1,0 +1,58 @@
+<section id="formacionacademica">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 borde2">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-9">
+                        <h3><B>FORMACION ACADEMICA</B><a href="#encabezado." ><button type="editar btn btn-light" class="subir btn btn-light"><i class="fa-solid fa-arrow-turn-up"></i></button></a></h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <button type="button" class="btn btn-dark" routerLink="/newedu" *ngIf="isLogged">Agregar Educacion</button>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-12"> -->
+                    <div *ngFor="let estudio of Estudios">
+                        <div class="row justify-content-md-center">
+                            <div class="col-2">
+                                <img id="estudio.imagen" src="{{estudio.imagen}}" width="70%">
+                            </div>
+                            <div class="col-3">
+                                <p><b>{{estudio.institucion}}</b></p>
+                            </div>
+                            <div class="col-2">
+                                <p>{{estudio.fechaInicio | date:"dd-MM-yyyy"}} {{estudio.fechaFin | date:"dd-MM-yyyy"}}</p>
+                            </div>
+                            <div class="col-3">
+                                <p>{{estudio.titulo}}</p>
+                            </div>
+                            <div class="col-2">
+                                <div *ngIf="isLogged">
+                                    <button class="btn btn-light" routerLink="/editedu/{{estudio.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                    <button class="btn btn-danger" (click)="delete(estudio.id)"><i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                    <!-- <table class="table">
+                        <tbody>
+                            <tr *ngFor="let estudio of Estudios">
+                                <td><img id="estudio.imagen" src="{{estudio.imagen}}" width="50%"></td>
+                                <td><h5><b>{{estudio.institucion}}</b></h5></td>
+                                <td>{{estudio.fechaInicio | date:"dd-MM-yyyy"}} {{estudio.fechaFin | date:"dd-MM-yyyy"}}</td>
+                                <td>{{estudio.titulo}}</td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-light" routerLink="/editedu/{{estudio.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(estudio.id)"><i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,56 @@
+<!-- <section id="cursosycertificaciones">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-9 borde2">
+                <div class="row justify-content-md-center">
+                    <div class="col-md">
+                        <h3><b>CURSOS Y CERTIFICACIONES</b><a href="#encabezado." ><button type="button" class="subir btn btn-light"><i class="fa-solid fa-arrow-turn-up"></i></button></a></h3>
+                        <div *ngFor="let curso of cursos">
+                            <div class="col-md">
+                                <p><b>{{curso.nombreCurso}}</b><button type="submit" class=" btn btn-light"><i data-bs-toggle="modal" data-bs-target="#CursosModal"class="fa-solid fa-pencil"></i></button>
+                                    <app-modal-cursos></app-modal-cursos>
+                                    <button type="submit" class=" btn btn-light"><i class="fa-solid fa-trash-can"></i></button></p>
+                                <p>{{curso.fechaInicio}} {{curso.fechaFin}}</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</section>  -->
+
+<section id="cursosycertificaciones">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 borde2">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-9">
+                        <h3><B>CURSOS Y CERTIFICACIONES</B><a href="#encabezado." ><button type="editar btn btn-light" class="subir btn btn-light"><i class="fa-solid fa-arrow-turn-up"></i></button></a></h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <button type="button" class="btn btn-dark" routerLink="/newcur" *ngIf="isLogged">Agregar Curso</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-11">
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let curso of Cursos">
+                                <td><h5><b>{{curso.nombreCurso}}</b></h5></td>
+                                <td>{{curso.fechaInicio | date:"dd-MM-yyyy"}} {{curso.fechaFin | date:"dd-MM-yyyy"}}</td>
+                                <td>{{curso.titulo}}</td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-light" routerLink="/editcur/{{curso.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(curso.id)"><i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

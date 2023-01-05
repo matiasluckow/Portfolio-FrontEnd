@@ -1,0 +1,50 @@
+<section id="hys">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 borde2">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg">
+                    <h3><b>APTITUDES Y HABILIDADES</b><a href="#encabezado."><button type="button" class="subir btn btn-light"><i class="fa-solid fa-arrow-turn-up"></i></button></a></h3>
+                    </div>
+                    <div class="col-lg-2">
+                        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+                        <circle-progress 
+                        [percent]="(skill.porcentaje)" 
+                        [radius]="70" [imageSrc]="''" 
+                        [title]="(skill.nombre)"
+                        [titleColor]="'#212F3C'"
+                        [showTitle]="true" 
+                        [showImage]="false" 
+                        [imageHeight]="70" 
+                        [imageWidth]="70" 
+                        [showUnits]="false"
+                        [showSubtitle]="false" 
+                        [outerStrokeWidth]="8" 
+                        [innerStrokeWidth]="2" 
+                        [outerStrokeColor]="'#78C000'"
+                        [innerStrokeColor]="'#C7E596'" 
+                        [animation]="true" 
+                        [animationDuration]="600">
+                        </circle-progress>
+                
+                        <div>
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                                    <i class="fa-solid fa-pencil"></i></button>
+                            </td>
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-danger" (click)="delete(skill.id)">
+                                    <i class="fa-solid fa-trash-can"></i></button>
+                            </td> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

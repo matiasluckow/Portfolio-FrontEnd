@@ -1,0 +1,27 @@
+<section id="encabezado.">
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand"> 
+                <img src= "{{infoporfolio.logoArgProg}}" width="130" height="auto">
+            </a>
+            <ul class="list-group list-group-horizontal">    
+                <div *ngFor="let red of redes" [ngSwitch]="red.id">
+                    <div *ngSwitchCase="1">
+                        <li class="list-group-item"><a [href]="red.url"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
+                    </div>
+                    <div *ngSwitchCase="2">
+                        <li class="list-group-item"><a [href]="red.url"><i class="fa-brands fa-instagram fa-2x text-white"></i></a></li>
+                    </div>
+                    <div *ngSwitchCase="3">
+                        <li class="list-group-item"><a [href]="red.url"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                    </div>
+                </div>
+                <li class="list-group-item"><i class="fa-solid fa-user fa-2x text-white" (click)="login()" *ngIf="!isLogged"></i></li> 
+                <li class="list-group-item"><i class="fa-solid fa-user-lock fa-2x text-white" (click)="onLogOut()" *ngIf="isLogged"></i></li>
+            </ul>
+        </div>
+    </nav>
+</section> 
+
+<app-menu></app-menu>
+    

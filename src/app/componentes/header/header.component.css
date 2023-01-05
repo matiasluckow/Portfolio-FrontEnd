@@ -1,0 +1,17 @@
+.bg-black{
+    background-color: black;
+} 
+
+.list-group{
+    --bs-list-group-bg: transparent;
+}
+
+.fa-brands.fa-linkedin.fa-2x:hover{
+    --bs-text-opocity: 1;
+    color: #065980 !important;
+}
+
+.fa-brands.fa-instagram.fa-2x:hover{
+    --bs-text-opocity: 1;
+    color:#572364  !important;    
+}

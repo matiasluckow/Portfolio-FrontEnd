@@ -1,0 +1,37 @@
+.borde2{
+    border: 2px solid blue;
+    border-radius: 50px; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.textoexperiencia{
+    margin-left: 20px;
+}
+
+.textotrabajo{
+    margin-left: 15px;
+}
+
+.subir{
+    margin-left: 10px;
+}
+
+.editar{
+    margin-left: 380px; 
+}
+
+.borrar{
+    margin-left: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+  
+li{
+    /* float: left; */
+    text-align: center;
+    width: 15em;
+} 

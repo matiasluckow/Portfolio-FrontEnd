@@ -1,0 +1,34 @@
+<section id="proyectos">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 borde2">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-9">
+                        <h3><B>Proyectos</B><a href="#encabezado." ><button type="editar btn btn-light" class="subir btn btn-light"><i class="fa-solid fa-arrow-turn-up"></i></button></a></h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <button type="button" class="btn btn-dark" routerLink="/newpro" *ngIf="isLogged">Agregar Proyecto</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-11">
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let proyecto of Proyectos">
+                                <td><h5><b>{{proyecto.nombreProyecto}}</b></h5></td>
+                                <td>{{proyecto.fechaRealizacion | date:"dd-MM-yyyy"}}</td>
+                                <td>{{proyecto.descripcion}}</td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-light" routerLink="/editpro/{{proyecto.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(proyecto.id)"><i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

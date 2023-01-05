@@ -1,0 +1,52 @@
+#side_nav{
+    background: #000;
+    /* padding-bottom: 468px; */
+}
+
+.content{
+    min-height: 100vh;
+    width: 100%;
+}  
+
+hr.h-color{
+    background: #eee;
+}
+
+.sidear li.active{
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover{
+    color: #000;
+}
+
+.sidebar li a{
+    color: #fff;
+}
+
+.apti{
+    position: relative;
+    left: -1320px;
+    top: 550px;
+}
+
+.formacion{
+    position: relative;
+    left: -2630px;
+    top: 820px;
+}
+
+.cursos{
+    position: relative;
+    left: -3950px;
+    top: 1200px;
+}
+
+.carousel{
+    left: 8px;
+    top: 80px;
+}
+
+
+

@@ -1,0 +1,39 @@
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreCompleto">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" [(ngModel)]="persona.nombreCompleto" required>
+                </div>
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="persona.titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="domicilio">Domiclio</label>
+                    <input type="text" class="form-control" id="domicilio" name="domicilio" [(ngModel)]="persona.domicilio" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaNac">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNac" name="fechaNac" [(ngModel)]="persona.fechaNac" required>
+                </div>
+                <div class="form-group">
+                    <label for="sobreMi">Sonre Mi</label>
+                    <input type="text" class="form-control" id="sobreMi" name="sobreMi" [(ngModel)]="persona.sobreMi" required>
+                </div>
+                <div class="form-group">
+                    <label for="foto">Foto</label>
+                    <input type="file" class="form-control" id="foto" name="foto" [(ngModel)]="persona.foto" (change)="uploadImagen($event)"
+                    accept=".jpg, .jpeg, .png">
+                </div>
+                <div class="imagen">
+                    <img [src]="imageService.url" width="200px">
+                </div> 
+                <button class="btn btn-primary">
+                    Editar Persona
+                </button>
+            </form>
+        </div>
+    </div>
+</div> 

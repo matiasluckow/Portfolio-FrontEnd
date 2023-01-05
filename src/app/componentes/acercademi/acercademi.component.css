@@ -1,0 +1,42 @@
+.textoacerca{
+    margin-left: 10px;
+} 
+
+.fotocv{
+    width: 60%;
+    margin-left: 80px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* .textoacerca2{
+    float: left;
+} */
+.textodatos{
+    margin-top: 20px;
+    margin-left: 100px;
+    /* margin-left: 150px; */
+}
+.textoocupacion{
+    margin-left: 30px;
+}
+.textoubicacion{
+     margin-left: 45px; 
+}
+
+.borde2{
+    border: 2px solid blue;
+    border-radius: 50px;  
+    margin-top: 85px;
+    margin-bottom: 25px;
+}
+
+.bordefila{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+.fa-regular.fa-pen-to-square{
+    padding-top: 20px;
+    padding-left: 730px;
+}
+

@@ -1,0 +1,63 @@
+<!-- <section id="experiencia">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col">
+v
+                        <h3><b>EXPERIENCIA LABORAL</b><a href="#encabezado." ><button type="button" class="subir btn btn-light"><i class="fa-solid fa-arrow-turn-up"></i></button></a></h3>
+                        <div *ngFor="let experiencia of experiencias">
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-3">
+                                    <p>{{experiencia.imagen}}</p>
+                                    <p>{{experiencia.nombreEmpresa}}</p>
+                                    <p>{{experiencia.puesto}}</p>
+                                    <p>{{experiencia.fechaIncio}} {{experiencia.fechaFin}}</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>{{experiencia.descripcion}}</p>
+                                </div>               
+                                <div class="col-md-2">
+                                    <button type="submit" class=" btn btn-light"><i data-bs-toggle="modal" data-bs-target="#ExperienciaModal" class="fa-solid fa-pencil"></i></button>
+                                    <button type="submit" class=" btn btn-light"><i class="fa-solid fa-trash-can"></i></button>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="experiencia">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 borde2">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-9">
+                        <h3><b>EXPERIENCIA LABORAL</b><a href="#encabezado." ><button type="button" class="subir btn btn-light"><i class="fa-solid fa-arrow-turn-up"></i></button></a></h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <button type="button" class="btn btn-dark" routerLink="/newexp" *ngIf="isLogged">Nueva Experiencia</button>
+                    </div>
+                </div>     
+                <div class="col-lg-11">
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let Experiencia of expe">
+                                <td><h5><b>{{Experiencia.nombreE}}</b></h5></td>
+                                <td>{{Experiencia.descripcionE}}</td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

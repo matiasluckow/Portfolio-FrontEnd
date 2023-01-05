@@ -1,0 +1,41 @@
+<!-- <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                        <input type="email" formControlName="email" [class.birder-danger]="MailValid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                     Gracias al getter que configuramos en el controlador 
+                    
+                    <div *ngIf="Mail?.errors  && Mail?.touched">    
+                        <p *ngIf="Mail?.hasError('required')" class="error">El correo electronico es requerido.</p>
+                        <p *ngIf="Mail?.hasError('email')" class="error">El formato del email debe ser válido.</p>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" formControlName="password" [class.birder-danger]="PasswordValid" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                     Gracias al getter que configuramos en el controlador 
+                    
+                    <div *ngIf="Password?.errors  && Password?.touched">
+                        <p *ngIf="Password?.hasError('required')" class="error">La contraseña es requerida.</p>
+                        <p *ngIf="Password?.errors?.['minlength']" class="error">La contraseña debe ser de 8 o más caracteres.</p> 
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Sesion</button>
+            </div>
+        </div>
+    </div>
+</div> -->

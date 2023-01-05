@@ -1,0 +1,39 @@
+.borde2{
+    border: 2px solid blue;
+    border-radius: 50px; 
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.textocursos{
+    margin-left: 85px;
+}
+
+.subir{
+    margin-left: 10px;
+}
+
+.editar{
+    margin-left: 158px;
+}
+
+.editar1{
+    margin-left: 132px;
+}
+
+.borrar{
+    margin-left: 10px;
+}
+
+.editar2{
+    margin-left: 375px;
+}
+
+.borrar2{
+    margin-left: 10px;
+}
+.fa-regular.fa-pen-to-square{
+    padding-left: 590px;
+}
